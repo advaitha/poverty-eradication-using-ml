@@ -54,7 +54,7 @@ website:
         - telecom_churn_prediction/telecom_churn_prediction.ipynb            
 format:
   html:
-    theme: cerulean
+    theme: lux
     css: styles.css
     toc: true
 

@@ -1,0 +1,9 @@
+# Resources for analyzing CDR
+
+### Python packages
+[Bandicoot open source library by MIT](https://bandicoot.mit.edu/)  
+[Cellyzer](https://anjuchamantha.github.io/cellyzer---CDR-data-analyzer/)
+
+### Blogpost
+[CDR data analysis using Neo4j](https://neo4j.com/graphgists/call-detail-records-cdr-analytics/)
+

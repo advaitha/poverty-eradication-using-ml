@@ -1,0 +1,7 @@
+---
+title: "Poverty Eradication Using Machine Learning"
+---
+
+A Study undertook to predict poverty using Data science and Machine learning
+
+

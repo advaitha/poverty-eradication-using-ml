@@ -1,0 +1,35 @@
+
+# Interpretable Poverty Mapping Using Social Media, Satellite Images and Geospatial Information
+
+* Satellite images are costly to acquire and training a deep learning model requires costly GPU resources
+* Deep learning models do not provide interpretability
+* In this study these challenges are overcome by combining social media and geospatial data sources with cost efficient ML methods as an interpretable and inexpensive approach to poverty estimation
+
+
+## Data used
+* Ground truth data - DHS data for Philippines
+* Geospatial covariates
+    * Social Media advertising data
+        * Facebook users per DHS household cluster with a breakdown of user segments such as users with 4G access, 3G access, 2G access, WiFi access, Apple devices and mid-to-high valued goods consumer preferences
+    * Remote sensing data
+        * Using Google Earth Engine (GEE) features were extracted from publicly accessible low-resolution saellite images
+        * Nighttime luminosity data taken from the Visible Infrared Imaging Radiometer Suite provided by NASA
+        * Daytime and nighttime land surface temperature derived from MODIS Satellite 2017 data
+        * Normalized Difference Vegetation Index (NDVI) derived from Landsat 2017
+        * For each satellite image, summary statistics was computed, i.e. the mean, maximum, minimum,skewness, variance, and kurtosis of all cloudless pixel values within each DHS cluster
+    * Point of interest data
+        * Using OSM volunteered geographic information was obtained for various points of interest like banks, hotels, convenience stores within each DHS household cluster.
+    * Health data from Department of health
+    * Public school information
+
+
+## Models
+* Linear Regression, Lasso Regression, Ridge Regression, Random Forest, and LightGBM. The models were trained on social media data, remote sensing data, and point of interest data, first separately then combined, with the hypothesis that integrating multiple data sources will lead to improved model performance over using any one data source alone.
+
+
+## Results
+* Using multiple data sources provided better results than using a single data source
+* Important features in this study to predict wealth are night time light values, proportion of population with 4G access, presence of public schools
+
+## References
+[Research Paper](https://arxiv.org/pdf/2011.13563v1.pdf)

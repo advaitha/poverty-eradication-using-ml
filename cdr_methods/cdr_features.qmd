@@ -1,0 +1,47 @@
+# Mobile phone Data
+
+## Features
+#### Individual
+* active_days
+* number_of_contacts
+* number_of_interactions
+* call_duration
+* percent_nocturnal
+* percent_initiated_conversations
+* response_delay_text
+* response_rate_text
+* entropy_of_contacts
+* Interactions_per_contact
+* percent_pareto_interactions (percentage of user's contact that account for 80% of its interactions)
+* percent_pareto_durations
+
+#### Spatial
+* Number of unique places (antennas) visited
+* Entropy of antennas
+* percent at home
+* radius of gyration (the equivalent distance of the mass from the center of gravity, for all visited places)
+* frequent_antennas - location that accounts for 80% of the locations the user was
+* churn_rate - Computes the frequency spent at every towers each week, and returns the distribution of the cosine similarity between two consecutives week
+
+#### Network (These are graph network analysis)
+* Directed, weighted matrix for call, text etc
+* Directed, Unweighted matrix
+* Undirected, weighted matrix
+* Undirected, Unweighted matrix
+* Clustering coefficient - Measure of the degree to which nodes in a graph tend to cluster together
+* clustering coefficient unweighted of users weighted undirected network
+* clustering coefficient weighted (undirected)
+* assortativity of indicators(The extent to which nodes of a graphlink to others of the same degree)
+* assortativity of attributes
+
+#### Recharges
+* Recharge amounts
+* Time between recharges
+* percent pareto recharges
+* Number of recharges
+* Average daily balance estimated from all recharges
+
+
+## Challenges
+* Mobile data will not be uniform across different networks. A different model may be required for different network.
+

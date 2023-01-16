@@ -1,0 +1,60 @@
+
+# Predicting Economic Development Using Geolocated wikipedia articles
+
+* Estimate socioeconomic indicators using open-source, geolocated textual information from wikipedia articles
+* NLP techniques are used to predict community level asset wealth and education
+outcomes using nearby geolocated Wikipedia articles
+* Many wikipedia articles are geolocated. Many developing regions of the world contain high concentrations of geolocated articles. These articles contain a rich textual information about locations and entities in an area
+
+![An Example of a geolocated wikipedia article](/Images/wikipedia_articles.png)
+
+## Approach
+* Geolocated articles are mapped to a vector representation using **Doc2vec** method
+* Use spatial distribution of the embeddings to predict socioeconomic indicators of poverty, as measured by ground-truth survey data collected by the world bank.
+* The model is further extended to include information about nightime light intensity as measured by satellites
+* This method is able to provide reliable predictions
+
+## Data used
+* Asset ownership from DHS
+* Corpus of geolocated wikipedia articles. For Africa there were roughly 50,000 such articles.
+* Nightlights Imagery from VIIRS
+
+## Methods
+* Wikipedia articles consist of a lot of bias in terms of information present, length of articles etc
+* Doc2vec model is used to train the embeddings from the documents
+
+![Doc2vec Model](/Images/doc2vec_model.png)
+
+![Multi-Modal architecture with Images and Text](/Images/multi_modal_doc2vec.png)
+
+
+## Results
+* Wikipedia embedding model outperformed the Nightlight-only model (train and tested within the same country)
+* Wikipedia embedding contributes positively towards the predictions
+* Multi-modal model performs best in all the different situations
+* Results suggest that wikipedia embeddings and nightlight images provide highly complementary information about poverty
+
+## Reference:-
+
+[Research Article](https://arxiv.org/pdf/1905.01627.pdf)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

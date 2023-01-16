@@ -1,0 +1,6 @@
+id;addr
+1000;Boat Club Road, 411001, Pune, Maharastra
+1001;Koregaon, 415501, Pune, Maharastra
+1002;Kothrud, 411038, Pune, Maharastra
+1003;Balewadi, 411045, Pune, Maharastra
+1004;Baner, 411047, Pune, Maharastra

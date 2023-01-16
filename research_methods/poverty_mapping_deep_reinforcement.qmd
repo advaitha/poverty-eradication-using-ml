@@ -1,0 +1,33 @@
+# Efficient Poverty Mapping using Deep Reinforcement Learning
+
+* Reinforcement learning approach in which free low-resolution imagery is used to dynamically identify where to acquire costly high-resolution images, prior to performing a deep learning task on high-resolution images
+
+
+## Dataset
+* LSMS survey conducted in Uganda
+* High resolution images from DigitalGlobe satellites with 3 bands (RGB) and 30cm pixel resolution
+* Low resolution satellite imagery from Sentinel-2 with 3 bands (RGB) with 10m pixel resolution
+
+## Method
+
+![Deep reinforcement learning method used](/Images/deep_reinforcement.png)
+
+* In the first step, High Resolution (HR) tiles are adaptively sampled and in the second step, pre-trained detector is used on the images
+
+### Adaptive selection
+* This framework finds tiles to sample, conditioned on the low spatial resolution image covering a cluster.
+* A policy network is modelled to only choose tiles where there is desirable number of object counts
+* The reward function encourages dropping as many subtiles as possible while successfully approximating the classwise object counts (object detection was used)
+
+## Results
+* The model achieved an R-squared of 0.62 and substantially outperforms results published from other studies, while using around 80% fewer satellite images.
+* The model is performing well when images of wet season is used instead of dry season
+
+![Difference in image acquisition for dry and wet seasons](/Images/drl_dry_wet.png)
+
+## Reference
+[Research Paper](https://arxiv.org/pdf/2006.04224v1.pdf)
+
+
+
+

@@ -1,0 +1,21 @@
+# Multi Spectral Remote Sensing
+
+Multispectral remote sensing is a passive remote sensing type. This means that the sensor is measuring light energy from an existing source - in this case the sun.
+
+## Electromagnetic Spectrum
+The electromagnetic spectrum is composed of a range of different wavelengths or “colors” of light energy. A spectral remote sensing instrument collects light energy within specific regions of the electromagnetic spectrum. Each region in the spectrum is referred to as a band.
+
+![Electromagnetic Spectrum](/Images/electromagnetic_spectrum.png)
+
+
+## Bands and wavelengths
+Spectral remote sensing data are collected by powerful camera-like instruments known as imaging spectrometers. Imaging spectrometers collect reflected light energy in “bands.”
+
+In Multispectral dataset, the band information is reported as the center wavelength value. This value represents the center point value of the wavelengths represented in that band. Thus in a band spanning 800-850 nm, the center would be 825 nm.
+
+## Spectral Resolution
+The spectral resolution of a dataset that has more than one band, refers to the spectral width of each band in the dataset. 
+
+
+## Spatial Resolution
+The spatial resolution of a raster represents the area on the ground that each pixel covers. If you have smaller pixels in a raster the data will appear more “detailed.” If you have large pixels in a raster, the data will appear more coarse or “fuzzy.”

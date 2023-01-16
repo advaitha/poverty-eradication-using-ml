@@ -1,0 +1,22 @@
+# Predicting poverty and wealth from Mobile phone metadata
+### Research paper by prof. Joshua Blumenstock
+* Mobile phone use reflects the structure of individual's social network, patterns of travel and location choice and histories of consumption and expenditure
+* Survey on asset ownership, housing characteristics and other welfare indicators.
+* Constructed a composite wealth index
+* Mobile phone data is used to predict the wealth index calculated from survey data
+* Features constructed are:-
+    * Total volume
+    * Intensity
+    * Timing
+    * Direction of communication etc
+    * Structure of the individual's contact network
+    * Patterns of mobility based on geospatial markers
+* Elastic Net regularization was used in modelling
+* Geospatial markers in the phone data enabled to study the geographic distribution of subscriber of wealth at an extremely fine degree of spatial granularity
+* There was a strong correlation between the mobile metadata predictions and the DHS survey data at district and village levels. Correlations persisted even for comparing clusters within urban and rural areas
+* **This approach can be used to predict other metrics as well. Rates of district electrification estimated from phone records are comparable to those reported in the DHS survey**
+
+![Predicted Vs Actual wealth of Mobile users](/Images/mobile_pred_vs_actual.png)
+
+![Wealth Prediction for Rawanda](/Images/mobile_rawanda_wealth_prediction.png)
+

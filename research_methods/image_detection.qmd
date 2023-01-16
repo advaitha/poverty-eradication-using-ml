@@ -1,0 +1,37 @@
+
+# Generating Interpretable Poverty Maps using Object Detection in Satellite Images
+
+## Method
+* Poverty prediction using night lights and other methods are not interpretable
+* This method uses object detection on high resolution satellite images
+* Use weighted counts of objects as features for predicting local-level consumption
+*  A satellite imagery object detector was trained on a publicly available, global scale object detection dataset, called xView, which avoids location specific training and provides a more general object detection model. The model is then applied to high resolution images taken over hundreds of villages across Uganda that were measured in an existing georeferenced household survey, and use extracted counts of detected objects as features in a final prediction of consumption expenditure.
+* A linear regression model is used to predict consumption
+
+![Methodology](/Images/object_detector.png)
+
+## Data used
+* Survey data from Living Standards Measurement Study (LSMS) for Uganda.
+* Uganda satellite imagery - High resolution images from DigitalGlobe satellites with three bands (RGB) and 30cm pixel resolution.
+* As object annotations were not available for Uganda, transfer learning was done by training an object detector on a different but related source dataset (xView dataset)
+
+
+## Training
+* YOLOv3 with single stage object detector with a DarkNet53 backbone architecture
+* Mean average precision and recall per class was used for evaluation
+* xView dataset consist of parent and child classes. Two object detectors were trained using parent and child level classes
+* Four types of features which was explored for this research paper
+    * Count of objects
+    * Confidence x counts - objects detected in Uganda was weighted by the confidence score
+    * Each detected object is weighted by its bounding box area
+    * (Confidence, size) X counts
+* Given the cluster level categorical feature vector, the poverty index is estimated with a regression model
+* Count of objects was performing better than other methods
+
+![Feature importance of the final model](/Images/obj_detec_explainer.png)
+
+
+**Reference**
+
+* [Research Paper](https://arxiv.org/pdf/2002.01612v1.pdf)
+

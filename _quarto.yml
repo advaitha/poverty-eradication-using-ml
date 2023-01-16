@@ -1,0 +1,62 @@
+project:
+  type: website
+  output-dir: docs
+website:
+  title: "Poverty Eradication Using ML"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+  sidebar:
+    title:  "Research Methods for targeting poverty"
+    style:  "docked"
+    search: True
+    backround:  light
+    contents:
+      - section: "**Research Methods**"
+        contents:
+        - research_methods/literature_review.qmd
+        - research_methods/ph_social_media.qmd
+        - research_methods/nlp_wiki_wealth_pred.qmd
+        - research_methods/image_detection.qmd     
+        - research_methods/Tile2Vec.qmd
+        - research_methods/poverty_mapping_deep_reinforcement.qmd        
+        - research_methods/new_directions.qmd 
+      - section: "**CDR Methods**"
+        contents:
+        - cdr_methods/phone_metadata.qmd
+        - cdr_methods/cdr_features.qmd
+        - cdr_methods/resources.qmd
+      - section: "**How to Measure poverty**"
+        contents:        
+        - how_to_measure_poverty/approches.qmd   
+      - section: "**Data**"
+        contents:
+        - data_sources_detecting_poverty/satellite_imagery.qmd   
+        - data_sources_detecting_poverty/survey_data.qmd 
+        - data_sources_detecting_poverty/multispectral_remote_sensing.qmd       
+      - section: "**Geograhic Data Processing**"
+        contents:
+        - spatial_data_processing/geographic_data_formats.qmd   
+        - spatial_data_processing/plot_buildings_with_area.ipynb
+        - spatial_data_processing/spatial_analysis.ipynb
+        - spatial_data_processing/crs.ipynb
+        - spatial_data_processing/visualization.ipynb
+        - spatial_data_processing/osm_processing.ipynb 
+        - spatial_data_processing/raster_data_processing.ipynb
+      - section: "**Deep Learning Implementations**"
+        contents:
+        - deeplearning_implementations/satellite_images_classification.ipynb    
+      - section: "**Telecom Churn Prediction**"
+        contents:
+        - telecom_churn_prediction/telecom_churn_eda.ipynb      
+        - telecom_churn_prediction/telecom_churn_prediction.ipynb            
+format:
+  html:
+    theme: cerulean
+    css: styles.css
+    toc: true
+
+
+

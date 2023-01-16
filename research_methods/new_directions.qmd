@@ -1,0 +1,50 @@
+# New directions (Ideas)
+
+## New datasets to consider
+### Using Internet speed as a proxy for a region's development
+* Use Internet speeds for a location to estimate the development in the area (Ookla provides open source datasets for the same)
+
+### Using Openstreetmap data and its attributes
+* For a given location / area using Openstreet Map data it is possible to derive the following information, which can be used to estimate wealth
+    * No. of buildings
+    * No. of roads
+    * No. of primary roads
+    * No. of trunk roads
+    * count of market places
+    * Number of charging stations
+    * No. of post offices
+    * Supermarket counts
+    * Car repair counts
+    * Department stores
+    * Computers
+    * Playgrounds
+    * Monuments
+
+
+## New Modelling approaches to consider
+
+### GAM Models
+* Using explainable models - How much a variable is influencing the predictions 
+* Explainability along with good prediction accuracy. Example - Explainable boosting machines (EBMs)
+* We can build editable models using EBMs
+
+### Using Semi-supervised learning
+* Use libraries like snorkel to generate labels
+* Low confidence images can be routed to humans for labeling
+
+### Using Bayesian Updates
+* There is correlation between wealth and spatial location
+* A Gaussian process can be implemented on top of the model. Use the prior observations to get the posterior distribution from the priors (tried at stanford in 2016)
+
+### Time series Analysis
+* Using time series analysis to forecast the wealth from past surveys
+
+
+
+
+
+
+
+
+
+

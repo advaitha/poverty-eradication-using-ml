@@ -1,0 +1,8 @@
+# Challenges
+
+## Data
+![Survey data location is shifted to protect anonymity](/Images/adding_noise_to_location.png)
+* Model Interpretability
+* Privacy of the mobile users
+* Fairness of the algorithms
+* 

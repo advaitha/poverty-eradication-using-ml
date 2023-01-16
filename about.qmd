@@ -1,0 +1,5 @@
+---
+title: "About"
+---
+
+A Study on predicting poverty using Data Science and Machine learning

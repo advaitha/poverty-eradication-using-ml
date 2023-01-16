@@ -1,0 +1,10 @@
+### Satellites
+* Landsat
+* DigitalGlobe
+* Sentinel
+* MODIS
+
+### Web services
+* planet (website)
+* Google Earth static map API
+
